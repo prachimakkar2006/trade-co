@@ -1,0 +1,40 @@
+{
+  "name": "tread-and-co-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "google-auth-library": "^9.15.1",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "joi": "^17.13.3",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^10.2.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  }
+}
